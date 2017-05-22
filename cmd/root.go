@@ -43,7 +43,7 @@ var RootCmd = &cobra.Command{
 	Long: `Doppler locates duplicate files by name and/or hash.
 
 Directories are searched recursively. If multiple directories are specified
-the results of the search spans all of them. Symlinks are not followed!`,
+the result of the search spans all of them. Symlinks are not followed!`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if len(args) == 0 {
 			fmt.Println("Need at least one directory.")
